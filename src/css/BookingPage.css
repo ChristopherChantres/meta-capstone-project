@@ -1,0 +1,13 @@
+/* BookingPage.css */
+.booking-page {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .page-title {
+    font-size: 32px;
+    color: #001b48;
+    margin-bottom: 30px;
+  }
+  
