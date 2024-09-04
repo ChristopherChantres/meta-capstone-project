@@ -42,13 +42,13 @@ const Main = () => {
       <section className="menu-section">
         <h2>Our Menu</h2>
         <p>Explore our menu to find your favorite dish.</p>
-        <button className="menu-button">View Full Menu</button>
+        <a href='/#' className="menu-button">View Full Menu</a>
       </section>
 
       {/* Reservations Section */}
       <section className="reservations-section">
         <h2>Make a Reservation</h2>
-        <button className="reserve-button">Reserve a Table</button>
+        <a href='/reserve-table' className="reserve-button">Reserve a Table</a>
       </section>
 
       {/* Testimonials Section */}
