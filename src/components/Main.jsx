@@ -6,7 +6,7 @@ const Main = () => {
     <div className="main-content">
       {/* Welcome Section */}
       <section className="welcome-section">
-        <h2>Welcome to Little Lemon</h2>
+        <h2>Welcome to <span className="brand-name">Little Lemon</span></h2>
         <p>Your favorite place to enjoy delicious meals and great ambiance!</p>
       </section>
 
@@ -73,8 +73,8 @@ const Main = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact-section">
-        <h2>Contact Us</h2>
+      <section className="visit-section">
+        <h2>Visit Us</h2>
         <p>Visit us at 123 Lemon St, Toronto, or call us at (123) 456-7890.</p>
         <p>Follow us on social media for updates!</p>
       </section>

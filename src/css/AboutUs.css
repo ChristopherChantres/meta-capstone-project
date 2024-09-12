@@ -1,0 +1,68 @@
+/* About Us Section Styling */
+.about-us-container {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-us-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .about-us-content h1 {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: transparent;
+    background: linear-gradient(135deg, #4caf50, #cfc400);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Button Style (Optional) */
+  .about-us-content button {
+    padding: 12px 24px;
+    background-color: #cfc400;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-us-content button:hover {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .about-us-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
