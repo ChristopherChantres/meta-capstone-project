@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Main.css'
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   return (
@@ -35,20 +36,21 @@ const Main = () => {
       {/* About Us Section */}
       <section className="about-us">
         <h2>About Us</h2>
-        <p>At Little Lemon, we believe in quality and tradition. Our chefs use the finest ingredients to bring you the best flavors.</p>
+        <p>At Little Lemon, we believe in the power of quality and tradition. Our chefs use only the finest ingredients to craft dishes that honor timeless recipes while adding a fresh, modern twist. Each meal is a celebration of flavor, from locally sourced produce to carefully selected spices. We are dedicated to creating an exceptional dining experience that blends the warmth of comfort food with the elegance of fine dining. Whether you're here for a casual meal or a special occasion, every dish reflects our passion for excellence and our commitment to making every visit memorable.</p>
       </section>
 
       {/* Menu Section */}
       <section className="menu-section">
         <h2>Our Menu</h2>
         <p>Explore our menu to find your favorite dish.</p>
-        <a href='/#' className="menu-button">View Full Menu</a>
+        <Link to='/#' className="menu-button">View Full Menu</Link>
       </section>
 
       {/* Reservations Section */}
       <section className="reservations-section">
         <h2>Make a Reservation</h2>
-        <a href='/reserve-table' className="reserve-button">Reserve a Table</a>
+        <p>Discover our new feature for online booking</p>
+        <Link to='/reserve-table' className="reserve-button">Reserve a Table</Link>
       </section>
 
       {/* Testimonials Section */}
@@ -66,11 +68,18 @@ const Main = () => {
       <section className="gallery-section">
         <h2>Our Gallery</h2>
         <div className="gallery-container">
-          <img src="vegi1.jpg" alt="Vegi Dish 1" className="gallery-img" />
-          <img src="vegi2.jpg" alt="Vegi Dish 2" className="gallery-img" />
-          <img src="vegi3.jpg" alt="Vegi Dish 3" className="gallery-img" />
+          <div className="img-wrapper">
+            <img src="vegi1.jpg" alt="Vegi Dish 1" className="gallery-img" />
+          </div>
+          <div className="img-wrapper">
+            <img src="vegi2.jpg" alt="Vegi Dish 2" className="gallery-img" />
+          </div>
+          <div className="img-wrapper">
+            <img src="vegi3.jpg" alt="Vegi Dish 3" className="gallery-img" />
+          </div>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section className="visit-section">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../css/BookingForm.css'; // Import the CSS file for styling
-import { submitAPI } from '../api/dummyFunctions';
 
 const BookingForm = ({ availableTimes = [], onDateChange = () => {}, submitForm }) => {
   const [formData, setFormData] = useState({
