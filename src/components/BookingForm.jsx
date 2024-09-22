@@ -9,6 +9,10 @@ const BookingForm = () => {
     occasion: ''
   });
 
+  const [availableTimes, setAvailableTimes] = useState([
+    '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'
+  ]);
+
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prev) => ({
@@ -21,6 +25,12 @@ const BookingForm = () => {
     e.preventDefault();
     alert(`Reservation made for ${formData.guests} guests on ${formData.date} at ${formData.time} for a ${formData.occasion}`);
   };
+
+  const renderOptions = (
+    availableTimes.map((time, index) => {
+      return <option key={index}>{time}</option>
+    })
+  )
 
   return (
     <form className="booking-form" onSubmit={handleSubmit}>
@@ -35,12 +45,7 @@ const BookingForm = () => {
         <label htmlFor="time">Choose time</label>
         <select id="time" value={formData.time} onChange={handleChange} required>
           <option value="" disabled>Select time</option>
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+            {renderOptions}
         </select>
       </div>
       
