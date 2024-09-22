@@ -1,24 +1,24 @@
 /* Navbar.css */
 .navbar-ul {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 0;
-    margin: 0;
-  }
-  
-  .navbar-ul li {
-    margin: 0 15px;
-  }
-  
-  .navbar-ul li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-ul li a:hover {
-    color: #f4b400; /* A golden color for hover effect */
-  }
-  
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar-ul li {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.navbar-ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-ul li a:hover {
+  color: #f4b400; /* A golden color for hover effect */
+}

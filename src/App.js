@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
-import BookingPage from "./components/BookingForm";
+import BookingPage from "./components/BookingPage";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

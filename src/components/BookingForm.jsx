@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../css/BookingForm.css'; // Import the CSS file for styling
+import { submitAPI } from '../api/dummyFunctions';
 
-const BookingForm = ({ availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'] }) => {
+const BookingForm = ({ availableTimes = [], onDateChange = () => {}  }) => {
   const [formData, setFormData] = useState({
     date: '',
     time: '',
@@ -15,11 +16,22 @@ const BookingForm = ({ availableTimes = ['17:00', '18:00', '19:00', '20:00', '21
       ...prev,
       [id]: value
     }));
+
+    if (id === 'date') {
+      onDateChange(value); // Call onDateChange when the date changes
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Reservation made for ${formData.guests} guests on ${formData.date} at ${formData.time} for a ${formData.occasion}`);
+
+    // Submit the form data using submitAPI
+    const isSuccess = await submitAPI(formData);
+    if (isSuccess) {
+      alert('Reservation successfully submitted!');
+    } else {
+      alert('Failed to submit the reservation.');
+    }
   };
 
   const renderOptions = (
@@ -41,7 +53,7 @@ const BookingForm = ({ availableTimes = ['17:00', '18:00', '19:00', '20:00', '21
         <label htmlFor="time">Choose time</label>
         <select id="time" value={formData.time} onChange={handleChange} required>
           <option value="" disabled>Select time</option>
-            {renderOptions}
+          {renderOptions}
         </select>
       </div>
       
@@ -62,6 +74,7 @@ const BookingForm = ({ availableTimes = ['17:00', '18:00', '19:00', '20:00', '21
       
       <button type="submit" className="submit-btn">Make Your Reservation</button>
     </form>
+
   );
 };
 
