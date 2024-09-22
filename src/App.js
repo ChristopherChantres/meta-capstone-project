@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import BookingPage from "./components/BookingPage";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import ConfirmedBooking from "./components/ConfirmedBooking";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/reserve-table" element={<BookingPage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/booking-confirmation" element={<ConfirmedBooking />} />
       </Routes>
       <Footer />
     </BrowserRouter>

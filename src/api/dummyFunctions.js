@@ -1,3 +1,7 @@
+/* 
+The following functions will behave as it they were external APIs
+*/
+
 // Utility function to add a delay
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 

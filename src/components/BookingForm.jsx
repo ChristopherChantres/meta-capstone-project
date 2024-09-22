@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/BookingForm.css'; // Import the CSS file for styling
 import { submitAPI } from '../api/dummyFunctions';
 
-const BookingForm = ({ availableTimes = [], onDateChange = () => {}  }) => {
+const BookingForm = ({ availableTimes = [], onDateChange = () => {}, submitForm }) => {
   const [formData, setFormData] = useState({
     date: '',
     time: '',
@@ -24,14 +24,7 @@ const BookingForm = ({ availableTimes = [], onDateChange = () => {}  }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Submit the form data using submitAPI
-    const isSuccess = await submitAPI(formData);
-    if (isSuccess) {
-      alert('Reservation successfully submitted!');
-    } else {
-      alert('Failed to submit the reservation.');
-    }
+    submitForm(formData)
   };
 
   const renderOptions = (
