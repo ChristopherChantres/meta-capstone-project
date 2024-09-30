@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Meta Frontend Capstone Project
+## The Little Lemon Restaurant
+
+https://github.com/user-attachments/assets/b3197356-b1b2-4fd0-ab69-1eec6fdd7000
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -52,6 +55,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/c
 ### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
 
 ### Making a Progressive Web App
 
